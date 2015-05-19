@@ -1,5 +1,5 @@
 ---
-storm_version: apache-storm-0.9.4
+
 
 storm_topology_name: project
 
