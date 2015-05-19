@@ -6,11 +6,8 @@
 - name: JDK | Oracle JDK | Make a directory that holds the Java binaries
   file: path=/usr/local/java state=directory
 
-- name: JDK | Oracle JDK | Copy Oracle JDK
-  copy: src=file_archives/{{ jdk_download_filename }} dest=/tmp 
-
-- name: JDK | Oracle JDK | Unpack the compressed JDK binaries
-  command: tar -xvzf /tmp/{{ jdk_download_filename }} chdir=/usr/local/java creates=/usr/local/java/{{ jdk_version }}
+- name: JDK | Oracle JDK | Unarchive Oracle JDK
+  unarchive: src=file_archives/{{ jdk_download_filename }} dest=/usr/local/java chdir=/usr/local/java creates=/usr/local/java/{{ jdk_version }}
 
 - name: JDK | Oracle JDK | Update the symbolic link to the JDK install
   file: path={{ java_home }} src=/usr/local/java/{{ jdk_version }} state=link force=yes
