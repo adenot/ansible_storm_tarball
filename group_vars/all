@@ -4,11 +4,11 @@
 
 zookeeper_user: zkadmin
 zookeeper_group: zkadmin
-zookeeper_password: $6$rounds=40000$1qjG/hovLZOkcerH$CK4Or3w8rR3KabccowciZZUeD.nIwR/VINUa2uPsmGK/2xnmOt80TjDwbof9rNvnYY6icCkdAR2qrFquirBtT1
+zookeeper_password: $6$hPg3dBSExQiCi4$R8D2mcencLxkQsv9IiepDsrTQ2PDpTwoCGShbtIP/LHCI9xeHYTnrX4VzgL5TEzgUyfHxf1Cg.1CtpfW6kOvc/
 
 storm_user: stormadmin
 storm_group: stormadmin
-storm_password: $6$rounds=40000$1qjG/hovLZOkcerH$CK4Or3w8rR3KabccowciZZUeD.nIwR/VINUa2uPsmGK/2xnmOt80TjDwbof9rNvnYY6icCkdAR2qrFquirBtT1
+storm_password: $6$hPg3dBSExQiCi4$R8D2mcencLxkQsv9IiepDsrTQ2PDpTwoCGShbtIP/LHCI9xeHYTnrX4VzgL5TEzgUyfHxf1Cg.1CtpfW6kOvc/
 
 
 
@@ -17,6 +17,9 @@ storm_password: $6$rounds=40000$1qjG/hovLZOkcerH$CK4Or3w8rR3KabccowciZZUeD.nIwR/
 # --------------------------------------
 
 java_home: /usr/local/java/jdk
+
+jdk_download_filename: jdk-7u80-linux-x64.tar.gz
+jdk_version: jdk1.7.0_80
 
 
 # --------------------------------------

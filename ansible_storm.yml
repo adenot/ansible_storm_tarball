@@ -5,7 +5,7 @@
 #
 
 - hosts: all
-  remote_user: root
+  sudo: yes
   roles:
     - jdk
 
@@ -17,7 +17,7 @@
 #
 
 - hosts: zookeepernodes
-  remote_user: root
+  sudo: yes
   roles:
     - zookeeper_install_tarball
 
@@ -28,16 +28,16 @@
 #
 
 - hosts: stormcluster
-  remote_user: root
+  sudo: yes
   roles:
     - storm_commons_tarball
 
 - hosts: stormnimbusnodes
-  remote_user: root
+  sudo: yes
   roles:
     - storm_nimbus
 
 - hosts: stormsupervisornodes
-  remote_user: root
+  sudo: yes
   roles:
     - storm_supervisor
